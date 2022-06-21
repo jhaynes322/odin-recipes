@@ -1,0 +1,27 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.home-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.recipes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    background-color: lightgray;
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.recipes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
