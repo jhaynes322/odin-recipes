@@ -34,5 +34,49 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+}
 
+p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ingredients {
+    padding-bottom: 20px;
+}
+
+.left {
+    background-color: lightslategray;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 20%;
+    float: left;
+    padding-top: 100px;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    margin: 1px 0;
+    border: 1px solid #999;
+}
+
+.nav li a {
+    display: block;
+    line-height: 3em;
+    width: 100%;
+    text-decoration: none;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
 }
