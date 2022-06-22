@@ -4,6 +4,8 @@ body {
 
 .home-title {
     background-color: lightskyblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,6 +36,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+    height: auto;
 }
 
 p {
@@ -43,18 +46,19 @@ p {
 
 .ingredients {
     padding-bottom: 20px;
+    border-bottom: solid 2px gray;
 }
 
 .left {
     background-color: lightslategray;
     top: 0;
     left: 0;
-    position: fixed;
     z-index: 1;
     height: 100%;
     width: 20%;
     float: left;
-    padding-top: 100px;
+    padding-top: 7px;
+    padding-bottom: 200px;
 }
 
 .nav {
@@ -65,11 +69,12 @@ p {
 
 .nav li {
     margin: 1px 0;
-    border: 1px solid #999;
+    border-bottom: 1px solid #999;
 }
 
 .nav li a {
     display: block;
+    margin-left: 20px;
     line-height: 3em;
     width: 100%;
     text-decoration: none;
@@ -79,4 +84,11 @@ p {
     display: flex;
     flex-direction: column;
     margin-left: 300px;
+    margin-right: 100px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
