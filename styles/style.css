@@ -2,121 +2,57 @@ html {
     margin: 0;
 }
 
-body {
+#burgerbody {
     font-family: Helvetica, Arial, sans-serif;
-}
-
-.home-title {
-    background-color: lightskyblue;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-}
-
-.recipes-container {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-    width: 30%;
-    height: 200px;
-    border-radius: 10px;
-}
-
-li {
-    margin: 20px;
-}
-
-.burger-container {
-    background-color: lightgray;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    height: auto;
-}
-
-p {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.ingredients {
-    padding-bottom: 20px;
-    border-bottom: solid 2px gray;
-}
-
-.left {
-    background-color: lightslategray;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    display: grid;
+    width: 100%;
     height: 100%;
-    width: 20%;
-    float: left;
-    padding-top: 7px;
-    padding-bottom: 200px;
+    grid-template-areas: "head head head"
+        "nav body ad"
+        "nav body ad";
+    grid-template-rows: 400px 1fr 1fr;
+    grid-template-columns: 150px 2fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
 }
 
-.nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+#burgerbody>.ad {
+    grid-area: ad;
 }
 
-.nav li {
-    margin: 1px 0;
-    border-bottom: 1px solid #999;
+#burgerbody>.navbar {
+    grid-area: nav;
+    color: lightblue;
+    border: 1px solid black;
 }
 
-.nav li a {
-    display: block;
-    margin-left: 20px;
-    line-height: 3em;
-    width: 100%;
-    text-decoration: none;
+.navlist {
+    list-style-type: disc;
+    list-style-position: outside;
+    background-color: lightslategray;
+    height: 100%;
+    padding-top: 5px;
+    line-height: 30px;
+    align-items: space-evenly;
 }
 
-.burger {
-    display: flex;
-    flex-direction: column;
-    margin-left: 300px;
-    margin-right: 100px;
-    padding-bottom: 30px;
+#burgerbody>.burger {
+    grid-area: body;
+    padding-left: 5rem;
+    margin-left: 5px;
 }
 
-h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+#burgerbody>.header {
+    grid-area: head;
+    padding: 5px;
+    border: 1px solid black;
+    justify-items: center;
+    background-color: lightslategray;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: rgb(2, 0, 36);
-    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(53, 53, 203, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    position: fixed;
-    width: 100%;
-    color: white;
-    margin-right: 10px;
-}
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: red;
+img .home-title {
+    margin: auto;
+    display: grid;
+    justify-content: center;
 }
