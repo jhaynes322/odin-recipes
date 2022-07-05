@@ -11,48 +11,65 @@ html {
         "nav body ad"
         "nav body ad";
     grid-template-rows: 400px 1fr 1fr;
-    grid-template-columns: 150px 2fr 1fr;
+    grid-template-columns: 250px 2fr 1fr;
     row-gap: 5px;
     column-gap: 5px;
 }
 
 #burgerbody>.ad {
     grid-area: ad;
+    margin: 0;
+    height: 100%;
+}
+
+.ad {
+    background-color: black;
+    height: 100%;
+    margin: 0;
 }
 
 #burgerbody>.navbar {
     grid-area: nav;
-    color: lightblue;
+    margin: 0;
+    height: 100%;
     border: 1px solid black;
 }
 
 .navlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     list-style-type: disc;
     list-style-position: outside;
     background-color: lightslategray;
+    padding-top: 2rem;
     height: 100%;
-    padding-top: 5px;
     line-height: 30px;
-    align-items: space-evenly;
 }
 
 #burgerbody>.burger {
     grid-area: body;
-    padding-left: 5rem;
-    margin-left: 5px;
+    height: 100%;
+    padding-left: 2rem;
+}
+
+.burger {
+    line-height: 40px;
 }
 
 #burgerbody>.header {
+    position: static;
     grid-area: head;
-    padding: 5px;
-    border: 1px solid black;
+    height: 100%;
+    margin: 0;
     justify-items: center;
+    align-items: center;
     background-color: lightslategray;
 }
 
-
-img .home-title {
+.header {
     margin: auto;
+    width: 100%;
     display: grid;
     justify-content: center;
 }
